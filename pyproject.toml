@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spatial-audio"
+version = "0.1.0"
+description = "Spatial audio engine for Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "numba>=0.60",
+    "soundfile>=0.12",
+    "PyAudio>=0.2.12",
+]
+license = "MIT"
+authors = [{ name = "Viliam Sälli", email = "viliam.salli@outlook.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.urls]
+Homepage = "https://github.com/vsalli12/spatial-audio"
