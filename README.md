@@ -1,11 +1,11 @@
-# spatial-audio
+# immersive-audio
 
 Real-time 2D positional stereo mixer for Python games. Can handle 50-100 simultanous sounds without jittering, lowpass filtering and volume falloff based on distance, pitch and timescale shifting for slow-mo and panning based on direction. Pure Python + numba; no compiled extension of its own.
 
 ## Install
 
 ```bash
-pip install spatial-audio
+pip install immersive-audio
 ```
 
 System libraries required by the audio backends (not pip-installable):
@@ -17,7 +17,7 @@ System libraries required by the audio backends (not pip-installable):
 
 ```python
 import time
-from spatialaudio import AudioMixer
+from immersiveaudio import AudioMixer
 
 mixer = AudioMixer()
 mixer.start()
@@ -57,7 +57,7 @@ Consequences:
 Curves are plain callables `f(dist, max_dist) -> float`, evaluated in Python outside the JIT loop, so custom curves cost nothing structurally:
 
 ```python
-from spatialaudio import volume_falloff, lowpass_sweep
+from immersiveaudio import volume_falloff, lowpass_sweep
 
 mixer.play_positional(
     "audio/engine_hum.wav", (0.0, 0.0),

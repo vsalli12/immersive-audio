@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "spatial-audio"
+name = "immersive-audio"
 version = "0.1.0"
 description = "Spatial audio engine for Python"
 readme = "README.md"
@@ -22,7 +22,7 @@ classifiers = [
 ]
 
 [tool.hatch.build.targets.wheel]
-only-include = ["spatialaudio.py"]
+only-include = ["immersiveaudio.py"]
 
 [project.urls]
 Homepage = "https://github.com/vsalli12/spatial-audio"
