@@ -21,5 +21,8 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio",
 ]
 
+[tool.hatch.build.targets.wheel]
+only-include = ["spatialaudio.py"]
+
 [project.urls]
 Homepage = "https://github.com/vsalli12/spatial-audio"
