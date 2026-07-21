@@ -2,6 +2,9 @@
 
 Real-time 2D positional stereo mixer for Python games. Can handle 50-100 simultanous sounds without jittering, lowpass filtering and volume falloff based on distance, pitch and timescale shifting for slow-mo and panning based on direction. Pure Python + numba; no compiled extension of its own.
 
+## Disclaimer
+The mixer supports only .wav files for now. 
+
 ## Install
 
 ```bash
